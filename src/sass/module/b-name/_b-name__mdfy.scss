@@ -1,0 +1,29 @@
+@use "global" as *;
+// sp size 375px -> sp
+// tb size 768px -> md
+// pc size 1440px -> xl
+
+.b-name__mdfy {
+  min-width: rem(375);
+  width: 100%;
+
+  @include mq(md) {
+  }
+
+  @include mq(xl) {
+  }
+}
+
+// 画像が奇数の時、擬似要素を左寄せする。
+.b-name__mdfy::after {
+  display: block;
+  content: "";
+  width: rem(187);
+
+  @include mq(md) {
+    content: none; // 擬似要素が必要ないので、打ち消してる。
+  }
+
+  @include mq(xl) {
+  }
+}
