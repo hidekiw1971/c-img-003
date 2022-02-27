@@ -3,9 +3,8 @@
 // tb size 768px -> md
 // pc size 1440px -> xl
 
-.b-name__img--mdfy {
-  transform: scale(1) translate(0%, 0%); // 画像の倍率(scale)と位置(translate)を調整
-
+.b-name__p {
+  position: absolute;
   @include mq(md) {
   }
 

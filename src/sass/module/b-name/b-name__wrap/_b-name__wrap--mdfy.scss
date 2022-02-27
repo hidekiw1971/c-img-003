@@ -1,0 +1,22 @@
+@use "global" as *;
+// sp size 375px -> sp
+// tb size 768px -> md
+// pc size 1440px -> xl
+
+.b-name__wrap--mdfy {
+  max-width: rem(187); // 画像を表示するbox横サイズ
+  width: 100%;
+  max-height: rem(168); // 画像を表示するbox縦サイズ
+  width: 100%;
+  overflow: hidden; // 上記のサイズからはみ出た部分は非表示にする。
+
+  @include mq(md) {
+  }
+
+  @include mq(xl) {
+    max-width: rem(320); //
+    width: 100%;
+    max-height: rem(320);
+    width: 100%;
+  }
+}

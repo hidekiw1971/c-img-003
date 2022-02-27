@@ -8,7 +8,7 @@
 
 ## portfolio url:
 
-- https://css-md-0010.wtb.cfbx.jp/
+- https://css-md-0011.wtb.cfbx.jp/
 
 ## module(共通部品)使い方
 
@@ -30,7 +30,7 @@
 
 ## 更新履歴
 
-- 2022/2/26 初版
+- 2022/2/27 初版
 
 ## 環境・使い方
 

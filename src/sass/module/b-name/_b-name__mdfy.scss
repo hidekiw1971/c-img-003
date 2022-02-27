@@ -18,7 +18,10 @@
 .b-name__mdfy::after {
   display: block;
   content: "";
-  width: rem(187);
+  max-width: rem(187); //
+  width: 100%;
+  max-height: rem(168);
+  width: 100%;
 
   @include mq(md) {
     content: none; // 擬似要素が必要ないので、打ち消してる。

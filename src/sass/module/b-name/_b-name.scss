@@ -7,6 +7,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: $regular;
+  font-size: rem(16);
+  color: #fff;
+
   @include mq(md) {
   }
 

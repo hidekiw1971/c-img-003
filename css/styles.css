@@ -181,8 +181,12 @@ select::-ms-expand {
 .b-name__mdfy::after {
   display: block;
   content: "";
-  width: 187px;
-  width: 11.6875rem;
+  max-width: 187px;
+  max-width: 11.6875rem;
+  width: 100%;
+  max-height: 168px;
+  max-height: 10.5rem;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .b-name__mdfy::after {
@@ -198,21 +202,46 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #fff;
+}
+.b-name__img--mdfy {
+  -webkit-transform: scale(1) translate(0%, 0%);
+          transform: scale(1) translate(0%, 0%);
 }
 .b-name__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.b-name__p--mdfy {
+  top: 41%;
+  left: 37%;
+}
+.b-name__p {
+  position: absolute;
+}
+.b-name__wrap--mdfy {
   max-width: 187px;
   max-width: 11.6875rem;
   width: 100%;
   max-height: 168px;
   max-height: 10.5rem;
   width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 1440px) {
-  .b-name__img {
+  .b-name__wrap--mdfy {
     max-width: 20rem;
     width: 100%;
     max-height: 20rem;
     width: 100%;
   }
+}
+
+.b-name__wrap {
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */
